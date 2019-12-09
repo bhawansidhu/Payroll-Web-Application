@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,34 +10,36 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
     <header>
         <h1 class="heading">Payroll Web Application</h1>
     </header>
     <section class="payrollWeb">
         <main class="main">
-            <label>Enter Employee Number :</label>
-            <input type="text" id="empNum">
-            <label>Enter Employee Name :</label>
-            <input type="text" id="empName">
-            <label>Enter Department :</label>
-            <input type="text" id="dept">
-            <label>Enter Working hours :</label>
-            <input type="text" id="hours">
-            <label>Enter Employee Type Code :</label>
-            <select id="empCode">
-                <option value="R">Regular </option>
-                <option value="F">Faculty</option>
-            </select>
-            <label>Enter Employee Qualification Code :</label>
-            <select id="quaCode">
-                    <option value="B">Bachelor Degree</option>
-                <option value="M">Master Degree</option> 
-            </select>
-            <input type="button" class="btn" value="Generate pay slip" id="buttonPaySlip">
+            <div class="empform">
+                <label>Enter Employee Number </label>
+                <input type="text" class="Employee" id="empNum"> 
+
+                <label> Enter Employee Name </label>
+                <input type="text" class="Employee" id="empName">
+
+                <label>Enter Department </label>
+                <input type="text" class="Employee" id="dept">
+
+                <label> Enter Working hours </label>
+                <input type="text" class="Employee" id="hours">
+
+                <label> Enter Employee Type Code </label>
+                <input type="text" id="empCode" class="Employee">
+
+                <label> Enter Employee Qualification Code </label>
+                <input type="text" id="quaCode" class="Employee">
+            </div>
+            <input type="button" value="Generate pay slip" id="buttonPaySlip">
         </main>
-        <div class="paySlip">
-            <h2>Pay Slip</h2>
+        <div>
+            <h2 class="heading">Pay Slip</h2>
             <div class="paySlipItems">
                 <div>
                     <label class="paySlipListItem"> Employee Number </label>
@@ -45,22 +48,35 @@
                     <label class="paySlipListItem"> Employee Type Code </label>
                     <label class="paySlipListItem"> Working hours </label>
                     <label class="paySlipListItem"> Gross Salary </label>
-                    <label class="paySlipListItem"> Deduction </label>
+                    <label class="paySlipListItem"> Deduction(CIT + Health surcharge) </label>
                     <label class="paySlipListItem"> Net Salary </label>
                 </div>
+
                 <div>
-                    <label id="numOutput" class="output"></label>
-                    <label id="nameOutput" class="output"></label>
-                    <label id="deptOutput" class="output"></label>
-                    <label id="empCodeOutput" class="output"></label>
-                    <label id="hoursOutput" class="output"></label>
-                    <label id="grossSalaryOutput" class="output"></label>
-                    <label id="totalDeductionOutput" class="output"></label>
-                    <label id="netPayOutput" class="output"></label>
+                        <label class="paySlipListItem"> :</label>
+                        <label class="paySlipListItem"> :</label>
+                        <label class="paySlipListItem"> :</label>
+                        <label class="paySlipListItem"> :</label>
+                        <label class="paySlipListItem"> :</label>
+                        <label class="paySlipListItem"> :</label>
+                        <label class="paySlipListItem"> :</label>
+                        <label class="paySlipListItem"> :</label>
+                    </div>
+
+                <div>
+                    <label  class="paySlipListItem" id="empNumOutput" > </label>
+                    <label  class="paySlipListItem" id="empNameOutput" ></label>
+                    <label  class="paySlipListItem" id="empDeptOutput" ></label>
+                    <label  class="paySlipListItem" id="empCodeOutput" ></label>
+                    <label class="paySlipListItem" id="hoursOutput" ></label>
+                    <label  class="paySlipListItem" id="grossSalaryOutput" ></label>
+                    <label  class="paySlipListItem" id="deductionOutput" ></label>
+                    <label  class="paySlipListItem" id="EmpNetPayOutput" ></label>
                 </div>
             </div>
         </div>
     </section>
-    <script src="index.js"></script>
+    <script src="js/index.js"></script>
 </body>
+
 </html>
