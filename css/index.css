@@ -1,0 +1,76 @@
+body {
+    padding: 1.5em;
+    font-family: arial, helvetica;
+    text-align: left;
+   
+}
+.heading{
+    color: rgb(25, 211, 211);
+}
+.label {
+    margin-bottom: 1em;
+}
+.main {
+    padding: 2em;
+    border-style: solid;
+    box-shadow: 5px 10px #888888;
+    background-color: white;
+}
+.payrollBox {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.5em;
+}
+input[type=text],
+select {
+    width: 100%;
+    padding: 0.7em 20px;
+    margin: 0.5em 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.btn {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+#buttonPaySlip {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+#buttonPaySlip:hover {
+    background-color: #666555;
+    color: pink;
+}
+.paySlipItems {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.5em;
+}
+h2 {
+    text-align: center;
+}
+.paySlipListItem {
+    display: block;
+}
+@media screen and (min-width:768px) {
+    .structure {
+        grid-template-columns: 1fr 1fr;
+    }
+    .output {
+        margin: 0.5em 0;
+    }
+    .output_font {
+        font-size: 1.2em;
+    }
+}
