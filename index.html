@@ -18,23 +18,35 @@
     <section class="payrollWeb">
         <main class="main">
             <div class="empform">
-                <label>Enter Employee Number </label>
+                <label> Employee Number </label>
                 <input type="text" class="Employee" id="empNum"> 
 
-                <label> Enter Employee Name </label>
+                <label>  Employee Name </label>
                 <input type="text" class="Employee" id="empName">
 
-                <label>Enter Department </label>
-                <input type="text" class="Employee" id="dept">
+                <label> Department </label>
+                <input type="text" class="Employee" id="empDept">
 
-                <label> Enter Working hours </label>
-                <input type="text" class="Employee" id="hours">
+                <label>  Working hours </label>
+                 <input type="text" class="Employee" id="hours">
 
-                <label> Enter Employee Type Code </label>
-                <input type="text" id="empCode" class="Employee">
+                <label>  Employee Type Code </label>
+                <select class="Employee" id="empCode">
+                    <option value="F">Faculty</option>
+                    <option value="R">Regular workers</option> 
+                </select>
+                
+                
+                    <label>If, Regular Worker-Enter fixed Salary </label>
+                    <input type="text" class="Employee" id="empFixSalary">
+                
 
-                <label> Enter Employee Qualification Code </label>
-                <input type="text" id="quaCode" class="Employee">
+                <label>  Employee Qualification Code </label>
+                <select  id="quaCode" class="Employee">
+                    <option value="M">Master Degree</option>
+                    <option value="B">Bachelor Degree</option>
+                </select>
+                
             </div>
             <input type="button" value="Generate pay slip" id="buttonPaySlip">
         </main>
@@ -42,7 +54,7 @@
             <h2 class="heading">Pay Slip</h2>
             <div class="paySlipItems">
                 <div>
-                    <label class="paySlipListItem"> Employee Number </label>
+                    <label class="paySlipListItem" > Employee Number </label>
                     <label class="paySlipListItem"> Employee Name </label>
                     <label class="paySlipListItem"> Department </label>
                     <label class="paySlipListItem"> Employee Type Code </label>
@@ -71,7 +83,7 @@
                     <label class="paySlipListItem" id="hoursOutput" ></label>
                     <label  class="paySlipListItem" id="grossSalaryOutput" ></label>
                     <label  class="paySlipListItem" id="deductionOutput" ></label>
-                    <label  class="paySlipListItem" id="EmpNetPayOutput" ></label>
+                    <label  class="paySlipListItem" id="empNetPayOutput" ></label>
                 </div>
             </div>
         </div>
