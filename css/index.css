@@ -44,7 +44,7 @@ body {
     font-size: 1.3em;
     background-color: black;
     color: white;
-    border: 2px solid rgb(235, 40, 73);;
+    border: 2px solid rgb(235, 40, 73);
 }
 #buttonPaySlip:hover {
     background-color: white;
@@ -65,4 +65,12 @@ body {
     font-family: Arial, Helvetica;
     padding: 0.4em 0em;
     display: block;
+}
+ 
+@media screen and (max-width:320px) {
+    .main{
+        width: 35em;
+        background-image: linear-gradient(270deg, #ebe2d7, #dfb2c2) ;
+    
+    }
 }
